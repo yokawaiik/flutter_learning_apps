@@ -1,0 +1,26 @@
+{
+  "name": "realtime_chat",
+  "version": "1.0.0",
+  "description": "server for websocket chat.",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon --experimental-modules --es-module-specifier-resolution=node --delay 3 index.js"
+  },
+  "keywords": [
+    "websocket",
+    "chat"
+  ],
+  "author": "yokawaiik",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}

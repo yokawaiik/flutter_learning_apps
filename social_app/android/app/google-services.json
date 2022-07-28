@@ -1,0 +1,39 @@
+ {
+  "project_info": {
+    "project_number": "523353062487",
+    "project_id": "social-app-e58c0",
+    "storage_bucket": "social-app-e58c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523353062487:android:9d3cc48146d81e7be5b712",
+        "android_client_info": {
+          "package_name": "com.YoKawaiiK.social_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523353062487-d90c694o17s5no34pis97qnmcaujlg2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBehcpmNAM9mvgEo3LifErbmVIgqzk7QeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523353062487-d90c694o17s5no34pis97qnmcaujlg2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,7 @@ class PassPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+        children: const [
           Center(
             child: Text(
               'You succeded in passing the captcha.',

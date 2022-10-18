@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:slider_captcha/slider_capchar.dart';
 import 'package:the_use_captcha/pages/pass_page.dart';
@@ -26,7 +25,7 @@ class _MainPageState extends State<MainPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
-              children: [
+              children: const [
                 Text(
                   "This app is demonstrating CAPTCHA.",
                   textAlign: TextAlign.center,
@@ -41,13 +40,14 @@ class _MainPageState extends State<MainPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Center(
               child: ElevatedButton(
+                // Call captcha dialog
                 onPressed: () => _showCaptcha(context),
-                child: Text(
+                child: const Text(
                   'Pass the captcha',
                 ),
               ),
@@ -61,7 +61,6 @@ class _MainPageState extends State<MainPage> {
   _showCaptcha(BuildContext context) async {
     var attempts = 3;
     bool captchaResult = false;
-
     await showGeneralDialog(
       context: context,
       barrierDismissible: true,
@@ -97,8 +96,9 @@ class _MainPageState extends State<MainPage> {
                         attempts -= 1;
                         if (attempts == 0) {
                           Navigator.of(context).pop();
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                              content: Text(
+                          ScaffoldMessenger.of(context)
+                              .showSnackBar(const SnackBar(
+                                  content: Text(
                             "You've already tried 3 times. Have a rest.'",
                           )));
                         }
@@ -115,10 +115,9 @@ class _MainPageState extends State<MainPage> {
         );
       },
     );
-
     if (captchaResult) {
       Navigator.of(context).pushNamed(PassPage.routeName);
-    } else {}
+    }
   }
 
   // Generate number for assets

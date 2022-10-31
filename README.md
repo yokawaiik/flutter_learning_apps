@@ -18,3 +18,5 @@ Apps made by me for learning reasons.
 12. social_app - A small project to create a messenger with posts (BLOC, Firebase);
 13. spot_the_bird - managing geo locationand storage (sqflite, flutter map, BLOC);
 14. use_platform_specific_code - call platform specific code.
+15. the_use_captcha - using captcha in flutter.
+16. caesar_cipher - encrypt and decrypt text.
